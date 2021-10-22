@@ -31,7 +31,7 @@ const myCart: IShoppingCart[] = [
     },
   },
   {
-    item: "chocolate",
+    item: "Chocolate",
     price: 5,
     quantity: 2,
     total: function () {
@@ -44,4 +44,4 @@ const totalShoppingFee = myCart
   .map((product) => product.total())
   .reduce((totalPrice, productPrice) => totalPrice + productPrice);
 
-console.log(totalShoppingFee);
+console.log("totalShoppingFee", totalShoppingFee); // output 33

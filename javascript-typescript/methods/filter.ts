@@ -23,4 +23,5 @@ const people: IPeople[] = [
 ];
 
 const adultPeople: IPeople[] = people.filter((human) => human.age > 18);
-console.log("checkAdult", adultPeople);
+
+console.log("adultPeople", adultPeople); // output [ { name: 'Ayşe', age: 19 }, { name: 'Ali', age: 20 } ]

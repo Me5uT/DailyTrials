@@ -36,4 +36,4 @@ const findUserNameById = (userId: number): string => {
   }
 };
 
-findUserNameById(5);
+findUserNameById(5); // output "Gönenç"
