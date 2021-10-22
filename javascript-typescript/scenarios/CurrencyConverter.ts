@@ -12,16 +12,21 @@ enum CurrencySymbols {
   USD = "$",
   EUR = "€",
 }
+interface IExchangeModel {
+  currency: Currencies;
+  rate: number;
+}
 
-const converter = (currency: Currencies): string => {
+// girilen para biriminin sembole dönüştürülmesi
+const convertCurrencyToSymbol = (currency: Currencies): string => {
   return CurrencySymbols[currency];
 };
 
-converter(Currencies.Euro);
-console.log("converter", converter);
+convertCurrencyToSymbol(Currencies.Euro);
+
 // rates array içierisinde objeler currencies,rate
 // fonksiyon Tl karşılığını verecek
-const rates = [
+const rates: IExchangeModel[] = [
   {
     currency: Currencies.TurkishLira,
     rate: 1,
@@ -36,15 +41,20 @@ const rates = [
   },
 ];
 
-const currencyConverter = (count: number, currency: Currencies) => {
-  // eşleşen rate i bul
-  const matchedRate = rates.find((a) => {
-    return a.currency == currency;
-  });
-  const converted = converter(currency);
-  // verilen currency değerini bul
-  return `${count} ${Currencies.TurkishLira} = ${
-    count / matchedRate.rate
-  } ${converted}`;
+const convertCurrencyToLira = (count: number, currency: Currencies): string => {
+  // eşleşen currency i bul
+  let matchedRate = rates.find((a) => a.currency == currency);
+
+  if (matchedRate == undefined) {
+    matchedRate = {
+      currency: Currencies.TurkishLira,
+      rate: 1,
+    };
+  }
+  const convertedCount = count / matchedRate.rate;
+  const convertedCurrency = convertCurrencyToSymbol(currency);
+
+  // verilen currency nin Türk Lirası karşılığını bul
+  return `${count} ${Currencies.TurkishLira} = ${convertedCount} ${convertedCurrency}`;
 };
-currencyConverter(11, Currencies.Euro);
+console.log(convertCurrencyToLira(11, Currencies.Euro));
