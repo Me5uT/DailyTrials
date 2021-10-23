@@ -1,10 +1,10 @@
-const arr = ["Elma", "Muz", "Armut", "Çilek"];
+const fruits = ["Elma", "Muz", "Armut", "Çilek"];
 
-const joinExampleOne = arr.join("");
+const joinExampleOne = numbers.join("");
 console.log(joinExampleOne);
 
-const joinExampleTwo = arr.join(" * ");
+const joinExampleTwo = numbers.join(" * ");
 console.log(joinExampleTwo);
 
-const joinExampleThree = arr.join(".");
+const joinExampleThree = numbers.join(".");
 console.log(joinExampleThree);
