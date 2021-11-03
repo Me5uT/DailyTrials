@@ -18,7 +18,7 @@ const objectFormatter2 = (obje: Object | any[]) => {
   return console.log(formatter);
 };
 
-const objec = [
+const objec: Object | any[] = [
   {
     name: "Ahmet",
     point: 1,
