@@ -37,4 +37,4 @@ console.log(
     userName: "MesutC",
   })
 );
-// always false
+// output -> false -> give an element, not an object
