@@ -33,3 +33,4 @@ const checkUserByUserName = (userName: string): boolean => {
 
 console.log(checkUserByUserName("MesutC")); // output true
 console.log(checkUserByUserName("asdasd")); // output false
+"asd".startsWith;
