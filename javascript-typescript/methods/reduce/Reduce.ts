@@ -42,6 +42,6 @@ const myCart: IShoppingCart[] = [
 
 const totalShoppingFee = myCart
   .map((product) => product.total())
-  .reduce((totalPrice, productPrice) => totalPrice + productPrice);
+  .reduce((totalPrice, productPrice) => totalPrice + productPrice); // Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
 console.log("totalShoppingFee", totalShoppingFee); // output 33
