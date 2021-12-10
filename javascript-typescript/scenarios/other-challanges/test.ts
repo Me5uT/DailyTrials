@@ -1,0 +1,1 @@
+const deneme = (arg: "a") => {};
