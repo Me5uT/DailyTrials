@@ -1,9 +1,7 @@
-class Sorter {
-  constructor(public collection: number[]) {}
+import { NumberCollector } from "./NumberCollector";
+import { Sorter } from "./Sorter";
 
-  sort(): void {}
-}
-
-const sorter = new Sorter([0, -5, 5, 1]);
+const numbersCollection = new NumberCollector([0, -6, 5, 1]);
+const sorter = new Sorter(numbersCollection);
 sorter.sort();
 console.log("sorter.collection", sorter.collection);

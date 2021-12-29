@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"css.9ad09f98.css","sourceRoot":"..","sourcesContent":["#sekil1 {\r\n  width: 100px;\r\n  height: 100px;\r\n  /* background-color: black; */\r\n  color: red;\r\n  border: 1px solid red;\r\n}\r\n"]}
