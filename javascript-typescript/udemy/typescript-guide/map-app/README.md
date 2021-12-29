@@ -1,6 +1,6 @@
 ## Uygulamayı çalıştırmak için :
 
-cd DailyTrials/DailyTrials/javascript-typescript/udemy/typescript-guide/map-app
+cd /DailyTrials/javascript-typescript/udemy/typescript-guide/map-app
 
 parcel index.html
 

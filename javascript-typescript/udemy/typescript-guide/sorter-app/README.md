@@ -2,6 +2,6 @@
 
 # Çalıştırmak için :
 
-cd DailyTrials/DailyTrials/javascript-typescript/udemy/typescript-guide/sorter-app
+cd /DailyTrials/javascript-typescript/udemy/typescript-guide/sorter-app
 
 npm start
