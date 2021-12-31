@@ -1,7 +1,7 @@
+import { CharactersCollection } from "./CharacterCollections";
 import { NumberCollector } from "./NumberCollector";
 import { Sorter } from "./Sorter";
 
-const numbersCollection = new NumberCollector([0, -6, 5, 1]);
-const sorter = new Sorter(numbersCollection);
-sorter.sort();
-console.log("sorter.collection", sorter.collection);
+const numbersCollection = new NumberCollector([0, -5, -10, 2, 99]);
+numbersCollection.sort();
+console.log("numbersCollection.data", numbersCollection.data);

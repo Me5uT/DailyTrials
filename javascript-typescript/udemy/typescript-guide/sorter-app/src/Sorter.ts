@@ -1,17 +1,15 @@
-import { NumberCollector } from "./NumberCollector";
-
-export class Sorter {
-  constructor(public collection: NumberCollector) {}
+export abstract class Sorter {
+  abstract compare(leftIndex: number, rightIndex: number): boolean;
+  abstract swap(leftIndex: number, rightIndex: number): void;
+  abstract length: number;
 
   sort(): void {
-    const { length } = this.collection;
+    const { length } = this;
 
     for (let i = 0; i < length; i++) {
       for (let j = 0; j < length - 1; j++) {
-        // if collection is an array of numbers;
-
-        if (this.collection.compare(j, j + 1)) {
-          this.collection.swap(j, j + 1);
+        if (this.compare(j, j + 1)) {
+          this.swap(j, j + 1);
         }
       }
     }

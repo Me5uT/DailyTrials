@@ -15,32 +15,34 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NumberCollector = void 0;
+exports.CharactersCollection = void 0;
 var Sorter_1 = require("./Sorter");
-var NumberCollector = /** @class */ (function (_super) {
-    __extends(NumberCollector, _super);
-    function NumberCollector(data) {
+var CharactersCollection = /** @class */ (function (_super) {
+    __extends(CharactersCollection, _super);
+    function CharactersCollection(data) {
         var _this = _super.call(this) || this;
         _this.data = data;
         return _this;
     }
-    Object.defineProperty(NumberCollector.prototype, "length", {
+    Object.defineProperty(CharactersCollection.prototype, "length", {
         get: function () {
             return this.data.length;
         },
         enumerable: false,
         configurable: true
     });
-    NumberCollector.prototype.compare = function (leftIndex, rightIndex) {
-        return this.data[leftIndex] > this.data[rightIndex];
+    CharactersCollection.prototype.compare = function (leftIndex, rightIndex) {
+        return (this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase());
     };
-    NumberCollector.prototype.swap = function (leftIndex, rightIndex) {
+    CharactersCollection.prototype.swap = function (leftIndex, rightIndex) {
         var _a;
+        var characters = this.data.split("");
         _a = [
-            this.data[rightIndex],
-            this.data[leftIndex],
-        ], this.data[leftIndex] = _a[0], this.data[rightIndex] = _a[1];
+            characters[rightIndex],
+            characters[leftIndex],
+        ], characters[leftIndex] = _a[0], characters[rightIndex] = _a[1];
+        this.data = characters.join("");
     };
-    return NumberCollector;
+    return CharactersCollection;
 }(Sorter_1.Sorter));
-exports.NumberCollector = NumberCollector;
+exports.CharactersCollection = CharactersCollection;
