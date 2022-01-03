@@ -1,61 +1,50 @@
 // triangle , square ve circle  3 ayrı class ile alanlarının hesaplanması
-
 abstract class Shape {
-  abstract name: string;
-  abstract perimeter: number;
-  abstract getPerimeter(): number;
+  side: number;
+  names: string = "";
+
+  constructor(side: number) {
+    this.side = side;
+  }
+
+  abstract getPerimeter(): void;
 }
 
 class Triangle extends Shape {
-  name: string = "Triagle";
-  perimeter: number;
-  sideOne: number;
-  constructor(sideOne: number) {
-    super();
-    this.sideOne = sideOne;
+  constructor(side: number) {
+    super(side);
+    this.names = "Triangle";
   }
 
   getPerimeter(): number {
-    this.perimeter = this.sideOne * 3;
-
-    return this.perimeter;
+    return this.side * 3;
   }
 }
 
 class Square extends Shape {
-  name: string = "Square";
-  perimeter: number;
-  sideOne: number;
-  constructor(sideOne: number) {
-    super();
-    this.sideOne = sideOne;
+  constructor(side: number) {
+    super(side);
+    this.names = "Square";
   }
 
   getPerimeter(): number {
-    this.perimeter = this.sideOne * 4;
-
-    return this.perimeter;
+    return this.side * 4;
   }
 }
 
 class Circle extends Shape {
-  name: string = "Circle";
-  perimeter: number;
-  radius: number;
-  constructor(radius: number) {
-    super();
-    this.radius = radius;
+  constructor(side: number) {
+    super(side);
+    this.names = "Circle";
   }
 
   getPerimeter(): number {
-    this.perimeter = 2 * this.radius * Math.PI;
-
-    return this.perimeter;
+    return Number((this.side * 2 * Math.PI).toFixed(2));
   }
 }
 
 function calculatePerimeter(obj: Shape): void {
-  console.log(`Şekil: ${obj.name} Çevre Uzunluğu: ${obj.getPerimeter()}`);
+  console.log(`Şekil: ${obj.names} Çevre Uzunluğu: ${obj.getPerimeter()}`);
 }
 
 const triangle = new Triangle(3);
