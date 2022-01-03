@@ -1,15 +1,15 @@
 // triangle , square ve circle  3 ayrı class ile alanlarının hesaplanması
 class Shape {
-  name: string = "";
-  perimeter: number = 0;
-  getPerimeter(): number {
+  public name: string = "";
+  protected perimeter: number = 0;
+  public getPerimeter(): number {
     return this.perimeter;
   }
 }
 
 class Triangle extends Shape {
-  name: string = "Triangle";
-  sideOne: number;
+  public name: string = "Triangle";
+  private sideOne: number;
 
   // Eşkenar üçgen
   constructor(sideOne: number) {
@@ -24,8 +24,8 @@ class Triangle extends Shape {
 }
 
 class Square extends Shape {
-  name: string = "Square";
-  sideOne: number;
+  public name: string = "Square";
+  private sideOne: number;
 
   constructor(sideOne: number) {
     super();
@@ -39,8 +39,8 @@ class Square extends Shape {
 }
 
 class Circle extends Shape {
-  name: string = "Circle";
-  radius: number;
+  public name: string = "Circle";
+  private radius: number;
 
   constructor(radius: number) {
     super();
