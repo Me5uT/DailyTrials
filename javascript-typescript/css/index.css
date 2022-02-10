@@ -5,3 +5,6 @@
   color: red;
   border: 1px solid red;
 }
+p + .container h2 {
+  color: orange;
+}

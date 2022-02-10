@@ -4,7 +4,7 @@ console.log(typeof s);
 
 const s2 = new String("Hello");
 console.log(s2.toLowerCase());
-console.log(typeof s);
+console.log(typeof s2);
 
 const book1 = {
   title: "Book One",

@@ -8,11 +8,11 @@ class MyClass {
 const c = new MyClass();
 const obj = {
   name: "obj",
-  getName: c.getName,
+  getName2: c.getName,
 };
 
 // Prints "obj", not "MyClass"
-console.log("obj.getName()", obj.getName());
+console.log("obj.getName()", obj.getName2());
 
 const d = new MyClass();
 const obj2 = {

@@ -30,8 +30,11 @@ class Book {
 }
 
 const book1 = new Book("Book One", "jhon Doe", 2020);
-console.log(book1);
-console.log(book1.getSummary());
+const book2 = new Book("Book One", "jhon Doe", 2020);
+
+console.log("book1", book1);
+console.log("book1.getSummary()", book1.getSummary());
 book1.revise(2021);
-console.log(book1);
-console.log(Book.topBookStore());
+console.log("book1", book1);
+console.log("Book.topBookStore()", Book.topBookStore());
+console.log(book1 === book2);

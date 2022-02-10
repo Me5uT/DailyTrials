@@ -20,8 +20,12 @@ class Magazine extends Book {
     this.month = month;
   }
   month: string;
+
+  getSummary(m?: string) {
+    return `${this.title} was written by ${this.author} in ${this.year} ${m}`;
+  }
 }
 
 const mgz1 = new Magazine("Magazine One", "John Doe", 2019, "Jan");
-console.log(mgz1);
-console.log(mgz1.getSummary());
+console.log("mgz1", mgz1);
+console.log("mgz1.getSummary()", mgz1.getSummary("July"));

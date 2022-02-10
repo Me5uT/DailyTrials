@@ -14,7 +14,7 @@ class DerivedBox extends Box {
 const base = new Box();
 const derived = new DerivedBox();
 
-// derived.sameAs(base);
+derived.sameAs(base);
 
 // Argument of type 'Box' is not assignable to parameter of type 'DerivedBox'.
 //   Property 'otherContent' is missing in type 'Box' but required in type 'DerivedBox'.

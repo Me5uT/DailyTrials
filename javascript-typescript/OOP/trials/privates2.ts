@@ -1,4 +1,3 @@
-"use strict";
 class Dog {
   #barkAmount = 0;
   personality = "happy";
