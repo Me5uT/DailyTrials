@@ -1,0 +1,10 @@
+// import first variables
+@import "variable.scss";
+
+// import mixins after variables
+@import "mixin.scss";
+@import "media.scss";
+@import "extend.scss";
+@import "header.scss";
+@import "body.scss";
+@import "middle.scss";

@@ -1,0 +1,34 @@
+.middle {
+  width: 100%;
+
+  .kutu1 {
+    @extend %buttons;
+
+    background-color: red;
+  }
+  .kutu2 {
+    @extend %buttons;
+
+    background-color: green;
+  }
+  .kutu3 {
+    @extend %buttons;
+
+    background-color: yellow;
+  }
+  .kutu4 {
+    @extend %buttons;
+
+    background-color: gray;
+  }
+  .kutu5 {
+    @extend %buttons;
+
+    background-color: blue;
+  }
+  .kutu6 {
+    @extend %buttons;
+
+    background-color: black;
+  }
+}

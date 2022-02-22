@@ -1,0 +1,114 @@
+.middle .kutu6, .middle .kutu5, .middle .kutu4, .middle .kutu3, .middle .kutu2, .middle .kutu1 {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+
+header {
+  background: red;
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header .container {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+header .container .logo {
+  float: left;
+  color: #5dd1ff;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+header .container nav {
+  float: right;
+}
+header .container nav .mobil--navbar {
+  float: right;
+  color: #fff;
+  display: none;
+  font-size: 50px;
+  margin-top: 15px;
+}
+@media (max-width: 1060px) {
+  header .container nav .mobil--navbar {
+    display: block;
+  }
+}
+header .container nav ul {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1060px) {
+  header .container nav ul {
+    display: none;
+  }
+}
+header .container nav ul li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  position: relative;
+}
+header .container nav ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 6px;
+  border: 1px solid transparent;
+}
+header .container nav ul li a:hover {
+  border-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.middle {
+  width: 100%;
+}
+.middle .kutu1 {
+  background-color: red;
+}
+.middle .kutu2 {
+  background-color: green;
+}
+.middle .kutu3 {
+  background-color: yellow;
+}
+.middle .kutu4 {
+  background-color: gray;
+}
+.middle .kutu5 {
+  background-color: blue;
+}
+.middle .kutu6 {
+  background-color: black;
+}
+
+/*# sourceMappingURL=index.css.map */
