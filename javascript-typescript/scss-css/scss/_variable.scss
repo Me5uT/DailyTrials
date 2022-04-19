@@ -1,9 +1,21 @@
 // Variables
+$number: 3;
 $primary-color: #fff;
 $main-background-color: red;
+$background: green;
 $primary-font-family: sans-serif;
 $small-font-size: 14px;
 $middle-font-size: 18px;
 $big-font-size: 50px;
 $container-width: 80%;
+
 // Variables
+
+// IF-ELSE
+@if $number <=2 {
+  $main-background-color: yellow;
+  $background: aqua;
+} @else if $number >=5 {
+  $main-background-color: white;
+  $background: black;
+}

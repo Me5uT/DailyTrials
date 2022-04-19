@@ -87,13 +87,15 @@ header .container nav ul li a:hover {
 body {
   margin: 0;
   padding: 0;
+  background-color: green;
 }
 
 .middle {
   width: 100%;
 }
 .middle .kutu1 {
-  background-color: red;
+  background-color: black;
+  height: 90px;
 }
 .middle .kutu2 {
   background-color: green;
@@ -109,6 +111,31 @@ body {
 }
 .middle .kutu6 {
   background-color: black;
+}
+
+.button--container .button3, .button--container .button2, .button--container .button1 {
+  font-size: 18px;
+  font-family: sans-serif;
+  border: 2px solid;
+  padding: 6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button--container .button1 {
+  background-color: green;
+  border-color: black;
+}
+.button--container .button2 {
+  background-color: red;
+  border-color: brown;
+}
+.button--container .button3 {
+  background-color: yellow;
+  border-color: yellowgreen;
 }
 
 /*# sourceMappingURL=index.css.map */

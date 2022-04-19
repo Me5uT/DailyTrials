@@ -1,10 +1,25 @@
+$colors: (
+  beyaz: white,
+  siyah: black,
+  yesil: green,
+);
+
+@function height($height: 15px) {
+  @return 15px + $height;
+}
+
+@function color($name) {
+  @return map-get($colors, $name);
+}
+
 .middle {
   width: 100%;
 
   .kutu1 {
     @extend %buttons;
 
-    background-color: red;
+    background-color: color(siyah);
+    height: height(75px);
   }
   .kutu2 {
     @extend %buttons;

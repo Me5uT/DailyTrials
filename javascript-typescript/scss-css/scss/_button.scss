@@ -1,0 +1,34 @@
+%btn {
+  font-size: $middle-font-size;
+  font-family: $primary-font-family;
+  border: 2px solid;
+  padding: 6px;
+  @include radius(5px);
+}
+
+@mixin btn($task) {
+  @extend %btn;
+
+  @if $task == "green" {
+    background-color: green;
+    border-color: black;
+  } @else if $task == "red" {
+    background-color: red;
+    border-color: brown;
+  } @else {
+    background-color: yellow;
+    border-color: yellowgreen;
+  }
+}
+
+.button--container {
+  .button1 {
+    @include btn("green");
+  }
+  .button2 {
+    @include btn("red");
+  }
+  .button3 {
+    @include btn("yellow");
+  }
+}
